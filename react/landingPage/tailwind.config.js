@@ -8,6 +8,17 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily:{
+        heading:["Poppins","sans-serif"],
+        text:["Jost", "sans-serif"]
+      },
+      colors:{
+        "darkBlue":"#00247D",
+        "slate":"#FAF9F9"
+      },
+      backgroundImage: {
+        'header': "url('./src/assets/header-img.jpg')",
+      },
       keyframes: {
         vibrate: {
           '0%, 100%': { transform: 'translateX(0)' },
