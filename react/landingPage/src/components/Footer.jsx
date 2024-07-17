@@ -11,9 +11,9 @@ import { MdCopyright } from "react-icons/md";
 export default function Footer() {
   return (
     <div className="w-full bg-slate py-[2rem]">
-      <div className="  w-10/12 mx-auto flex justify-between">
+      <div className="  w-10/12 mx-auto lg:flex lg:flex-row flex flex-col justify-between gap-[2rem]">
         {/* first grp  */}
-        <div className="w-3/12 space-y-4">
+        <div className=" lg:w-3/12 lg:flex lg:flex-col lg:justify-center lg:items-center space-y-4">
           <img src={logo} alt="logo" />
           <p className="font-text">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -24,7 +24,7 @@ export default function Footer() {
         </div>
 
         {/* second grp  */}
-        <div className="w-3/12 font-text space-y-3">
+        <div className=" lg:w-3/12 lg:w-3/12 lg:flex lg:flex-col lg:justify-center lg:items-center font-text space-y-3">
           <h1 className=" font-heading font-bold">Contact Info</h1>
           <div className=" flex items-center gap-3" >
             <span>
@@ -47,7 +47,7 @@ export default function Footer() {
         </div>
 
         {/* third grp  */}
-        <div className="w-3/12 font-text space-y-3">
+        <div className=" lg:w-3/12  lg:flex lg:flex-col lg:justify-center  font-text space-y-3">
           <h1  className=" font-heading font-bold">Socials</h1>
 
           <div className=" flex items-center gap-3">
