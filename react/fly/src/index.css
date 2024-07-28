@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  overflow-x: hidden !important ;
+  width: 100vw;
+  height: 100vh;
+}
+
+.slick-prev {
+  position: absolute;
+  top:330px;
+  left:-380px;
+}
+
+.slick-next {
+  
+  top: 330px;
+  left:-320px;
+}
+
+
+.slick-prev::before,.slick-next::before{
+   display:none;
+    }
+
+.arrows{
+height:40px;
+width:40px;
+padding: 10px;
+border: 1px solid blue;
+border-radius: 100%;
+}
+
+.arrows:hover{
+  background-color: blue;
+  color: white !important;
+  transition-duration:300ms !important ;
+  transition: all;
+
+  
+}

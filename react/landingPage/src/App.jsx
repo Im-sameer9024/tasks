@@ -15,6 +15,15 @@ export default function App() {
      <Contact/>
      <Faq/>
      <Footer/>
+
+     <div className=" flex justify-between">
+          
+
+          {/* Right Section  */}
+          <div className=" w-8/12">
+              
+          </div>
+        </div>
     </div>
   )
 }
