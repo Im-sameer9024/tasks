@@ -4,16 +4,14 @@
 
 export default function Card({ id, title, image }) {
   return (
-    <div>
-      <div key={id}  >
-        <div className=" relative w-[12.5rem] h-[25rem] cursor-pointer">
-          <img src={image} alt="img" className=" w-[12.5rem] h-[25rem]" /> 
+     
+        <div className=" hover:w-[14rem] transition-all duration-500  rounded-xl  relative w-[10rem]  h-[25rem] cursor-pointer mx-auto ">
+          <img src={image} alt="img" className=" object-cover w-full h-full rounded-xl hover-grow" /> 
           {/* hover section  */}
-          <div className=" hover:bg-slate-400 opacity-45 text-white text-[30px]  top-0 absolute w-full h-full ">
+          <div className="  text-black font-bold text-[30px] rounded-xl top-0 absolute w-full h-full ">
             {title}
           </div>
         </div>
-      </div>
-    </div>
+       
   )
 }

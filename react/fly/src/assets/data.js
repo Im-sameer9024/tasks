@@ -1,9 +1,9 @@
 // inital data - dynamic data strutre works
-import img1 from "./img1.jpg"
-import img2 from "./img2.jpg"
-import img3 from "./img3.jpg"
-import img4 from "./img1.jpg"
-import img5 from "./img2.jpg"
+import img1 from "./img1.jpeg"
+import img2 from "./img2.jpeg"
+import img3 from "./img3.jpeg"
+import img4 from "./img4.jpg"
+import img5 from "./img5.jpg"
 
 import tour1 from './tour1.jpg'
 import tour2 from './tour2.jpg'
@@ -14,11 +14,11 @@ import tour3 from './tour3.jpg'
 
 
 export const Sliderdata = [
-  { id: 0, title: "India", image: img1, description: "this is India" },
-  { id: 1, title: "usa", image: img2, description: "this is India" },
-  { id: 2, title: "uae", image: img3, description: "this is India" },
-  { id: 3, title: "america", image: img4, description: "this is India" },
-  { id: 4, title: "Londan", image: img5, description: "this is India" },
+  { id: 0, title: "India", image: img1, description: "India is a land of various cultures and a rich heritage. It is the seventh-largest country by area and the second-most populous country globally " },
+  { id: 1, title: "usa", image: img2, description: "The United States of America is the world's third largest country in size and nearly the third largest in terms of population" },
+  { id: 2, title: "uae", image: img3, description: "The United Arab Emirates (UAE) is situated in the Southeast of the Arabian Peninsula, bordering Oman and Saudi Arabia" },
+  { id: 3, title: "america", image: img4, description: "The United States of America is the world's third largest country in size and nearly the third largest in terms of population" },
+  { id: 4, title: "Londan", image: img5, description: "London became known for its typical  also known as Pea Soupers. London was sometimes referred to as The Smoke" },
 ];
 
 export const dealsType = [

@@ -36,7 +36,7 @@ export default function Exclusive() {
           </ul>
           {/* Aerrow key  */}
           <div className=" absolute right-0 space-x-5 ">
-            <button className=" bg-slate-400 text-white p-1 rounded-full duration-200 hover:bg-[#00247D]"><AiOutlineArrowLeft /></button>
+            <button  className=" bg-slate-400 text-white p-1 rounded-full duration-200 hover:bg-[#00247D]"><AiOutlineArrowLeft /></button>
             <button className=" bg-slate-400 text-white p-1 rounded-full duration-200 hover:bg-[#00247D]"><AiOutlineArrowRight /></button>
           </div>
         </div>
