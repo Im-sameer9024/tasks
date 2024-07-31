@@ -1,14 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-body{
-  overflow-x: hidden !important ;
-  width: 100vw;
-  height: 100vh;
-}
-
-/* @media (min-width:480px) and (max-width : 768px) {
+@media (min-width:480px) and (max-width : 768px) {
 
   .slick-prev{
     top: 117%;
@@ -100,4 +90,4 @@ border-radius: 100%;
   justify-content: center;
   align-items: center;
   margin: auto;
-} */ 
+} */

@@ -1,18 +1,18 @@
-/* eslint-disable react/prop-types */
-import Deal from "./Deal";
+import { Routes, Route } from "react-router-dom";
+import Hotdeals from './All Pages/Hotdeals'
+import International from "./All Pages/International";
+import Domestic from "./All Pages/Domestic";
+import Holidays from "./All Pages/Holidays";
 
-
-export default function AllDeals({category,Exclusivedeals}) {
-
-
-
+export default function AllDeals() {
   return (
-    <div className=" flex justify-between ">
-      {
-        Exclusivedeals[category].map((deal) =>(
-          <Deal key={deal.id} title={deal.title} image={deal.image} price={deal.price} services={deal.services} day={deal.day} />
-        ))
-      }
-    </div>
+    <>
+      <Routes>
+        <Route path="/hotdeals" element={<Hotdeals />} />
+        <Route path="/international" element={<International />} />
+        <Route path="/domestic" element={<Domestic />} />
+        <Route path="/holidays" element={<Holidays />} />
+      </Routes>
+    </>
   )
 }

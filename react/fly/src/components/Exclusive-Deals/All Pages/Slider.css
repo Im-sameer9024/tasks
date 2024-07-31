@@ -1,0 +1,11 @@
+.slick-prev:before,
+    .slick-next:before {
+        color: yellow !important ;
+    }
+
+    .slick-prev{
+      width: 30px;
+      height: 30px;
+      background-color: red;
+
+    }

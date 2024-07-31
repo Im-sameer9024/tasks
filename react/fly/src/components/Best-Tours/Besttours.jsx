@@ -1,4 +1,4 @@
-import middleimg from "../../assets/middleimg.jpg"
+import middleimg from "../../assets/banner.jpg"
 import Cards from "./Cards"
 
 export default function Besttours() {

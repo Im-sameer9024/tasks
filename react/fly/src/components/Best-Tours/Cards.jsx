@@ -1,12 +1,10 @@
-import { useContext } from "react"
-import { StoreContext } from "../../Context-API/StoreContext"
-import Card from "./Card"
 
+import Card from "./Card"
+import { toursData } from "../../assets/data"
 
 
 export default function Cards() {
 
- const {toursData} = useContext(StoreContext)
 
 
   return (

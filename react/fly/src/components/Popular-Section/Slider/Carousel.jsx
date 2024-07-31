@@ -4,13 +4,13 @@ import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import Slider from "react-slick";
 import { AiOutlineArrowRight, AiOutlineArrowLeft } from "react-icons/ai";
-import { useContext, useState } from "react";
+import {  useState } from "react";
 import Card from "./Card";
-import { StoreContext } from "../../../Context-API/StoreContext";
+import './Carousel.css'
+import { Sliderdata } from "../../../assets/data";
 
 const Carousel = () => {
 
-  const {Sliderdata} = useContext(StoreContext)
 
   const[id,setId] = useState(1)
 

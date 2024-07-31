@@ -4,7 +4,7 @@ import { CiStopwatch } from "react-icons/ci";
 
 export default function Deal({ title, image, price, services, day }) {
   return (
-    <div className=" w-[20rem] shadow-2xl  rounded-t-3xl shadow-slate-400 flex flex-col h-[20rem]">
+    <div className=" w-[20rem] shadow-2xl  rounded-t-3xl shadow-slate-400 flex flex-col h-[20rem] mx-auto my-[1rem]">
     <div className="relative">
       <img src={image} alt="" className="w-full h-[200px] rounded-t-xl" />
       <p className=" flex items-center bg-[#00247D] text-white px-4  absolute bottom-5"><span><PiCurrencyInrBold /></span>{price}</p>
@@ -20,8 +20,8 @@ export default function Deal({ title, image, price, services, day }) {
     <div className="ml-4 my-3 space-y-3">
       <h1 className="font-bold font-heading">{title}</h1>
       <p className="font-text flex space-x-2">{
-        services.map((el) => (
-          <span key={el.id}>{el},</span>
+        services.map((el,i) => (
+          <span key={i}>{el},</span>
         ))
       }</p>
       <p className=" flex items-center font-bold "><span><CiStopwatch /></span>{day} days</p>

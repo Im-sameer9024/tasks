@@ -25,8 +25,8 @@ export default function Card({ title, image, price, services, day }) {
       <div className="ml-4 my-3 space-y-3">
         <h1 className="font-bold font-heading">{title}</h1>
         <p className="font-text flex space-x-2">{
-          services.map((el)=>(
-            <span key={el.id}>{el},</span>
+          services.map((el,i)=>(
+            <span key={i}>{el},</span>
           ))
           
           }</p>
