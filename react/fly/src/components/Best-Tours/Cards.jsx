@@ -13,7 +13,7 @@ export default function Cards() {
         <h1 className=" font-heading font-bold text-[2rem] mx-auto">Best Value Tours</h1>
         <p className="mx-auto text-slate-400">Best offers trips from us</p>
       </div>
-      <div className=" grid grid-cols-3 justify-items-center grid-rows-2 gap-6">
+      <div className=" lg:grid-cols-3 grid-cols-1 sm:grid-cols-2 gap-6 grid grid-rows-2">
        {
         toursData.map((tour) => (
           

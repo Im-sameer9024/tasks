@@ -8,6 +8,12 @@ body{
   height: 100vh;
 }
 
+#allDeals .active{
+
+  color: #00247D;
+  border-bottom: 1px solid #00247D;
+}
+
 /* @media (min-width:480px) and (max-width : 768px) {
 
   .slick-prev{

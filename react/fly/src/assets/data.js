@@ -8,6 +8,15 @@ import img5 from "./img5.jpg"
 import tour1 from './tour1.jpg'
 import tour2 from './tour2.jpg'
 import tour3 from './tour3.jpg'
+import tour4 from './tour4.jpg'
+import tour5 from './tour5.jpg'
+import tour6 from './tour6.jpg'
+import tour7 from './tour7.jpg'
+import tour8 from './tour8.jpg'
+import tour9 from './tour9.jpg'
+import tour10 from './tour10.jpg'
+
+
 
 
 
@@ -36,28 +45,87 @@ export const dealsType = [
   },
 ]
 
-export const Exclusivedeals = 
+export const HotDeals = [
   {
-    "HOT DEALS": [
-    { id: 0, title: "Himachal Pradesh", image: tour1, price: 5000, services: ["Mountaing", "Trek", "Campning"], day: 8 },
-    { id: 1, title: "Himachal Pradesh", image: tour1, price: 6000, services: ["Mountaing", "Trek", "Campning"], day: 18 },
-    { id: 2, title: "Himachal Pradesh", image: tour1, price: 9000, services: ["Mountaing", "Trek", "Campning"], day: 8 }],
+  data:[{ id: 0, title: "Himachal Pradesh", image: tour1, price: 5000, services: ["Mountaing", "Trek", "Campning"], day: 8 },
+  { id: 1, title: "Himachal Pradesh", image: tour1, price: 6000, services: ["Mountaing", "Trek", "Campning"], day: 18 },
+  { id: 2, title: "Himachal Pradesh", image: tour1, price: 9000, services: ["Mountaing", "Trek", "Campning"], day: 8 }]
+},
 
-    "INTERNATIONAL HOLIDAY":[
-      { id: 0, title: "Himachal Pradesh", image: tour2, price: 5000, services: ["Mountaing", "Trek", "Campning"], day: 8 },
-      { id: 1, title: "Himachal Pradesh", image: tour2, price: 6000, services: ["Mountaing", "Trek", "Campning"], day: 18 },
-      { id: 2, title: "Himachal Pradesh", image: tour2, price: 9000, services: ["Mountaing", "Trek", "Campning"], day: 8 }],
+{
+  data:[{ id: 3, title: "Himachal Pradesh", image: tour2, price: 5000, services: ["Mountaing", "Trek", "Campning"], day: 8 },
+  { id: 4, title: "Himachal Pradesh", image: tour2, price: 6000, services: ["Mountaing", "Trek", "Campning"], day: 18 },
+  { id: 5, title: "Himachal Pradesh", image: tour2, price: 9000, services: ["Mountaing", "Trek", "Campning"], day: 8 }]
+},
 
-      "DOMESTIC HOLIDAY":[
-      { id: 0, title: "Himachal Pradesh", image: tour3, price: 5000, services: ["Mountaing", "Trek", "Campning"], day: 8 },
-      { id: 1, title: "Himachal Pradesh", image: tour3, price: 6000, services: ["Mountaing", "Trek", "Campning"], day: 18 },
-      { id: 2, title: "Himachal Pradesh", image: tour3, price: 9000, services: ["Mountaing", "Trek", "Campning"], day: 8 }],
+{
+  data:[{ id: 6, title: "Himachal Pradesh", image: tour3, price: 5000, services: ["Mountaing", "Trek", "Campning"], day: 8 },
+  { id: 7, title: "Himachal Pradesh", image: tour3, price: 6000, services: ["Mountaing", "Trek", "Campning"], day: 18 },
+  { id: 8, title: "Himachal Pradesh", image: tour3, price: 9000, services: ["Mountaing", "Trek", "Campning"], day: 8 }]
+},  
 
-      "TOP HOLIDAY":[
-      { id: 0, title: "Himachal Pradesh", image: img1, price: 5000, services: ["Mountaing", "Trek", "Campning"], day: 8 },
-      { id: 1, title: "Himachal Pradesh", image: img2, price: 6000, services: ["Mountaing", "Trek", "Campning"], day: 18 },
-      { id: 2, title: "Himachal Pradesh", image: img3, price: 9000, services: ["Mountaing", "Trek", "Campning"], day: 8 }],
-  }
+]
+
+export const InternationDeals =[
+  {
+    data:[{ id: 0, title: "Himachal Pradesh", image: tour4, price: 5000, services: ["Mountaing", "Trek", "Campning"], day: 8 },
+    { id: 1, title: "Himachal Pradesh", image: tour4, price: 6000, services: ["Mountaing", "Trek", "Campning"], day: 18 },
+    { id: 2, title: "Himachal Pradesh", image: tour4, price: 9000, services: ["Mountaing", "Trek", "Campning"], day: 8 }]
+  },
+  
+  {
+    data:[{ id: 3, title: "Himachal Pradesh", image: tour5, price: 5000, services: ["Mountaing", "Trek", "Campning"], day: 8 },
+    { id: 4, title: "Himachal Pradesh", image: tour5, price: 6000, services: ["Mountaing", "Trek", "Campning"], day: 18 },
+    { id: 5, title: "Himachal Pradesh", image: tour5, price: 9000, services: ["Mountaing", "Trek", "Campning"], day: 8 }]
+  },
+  
+  {
+    data:[{ id: 6, title: "Himachal Pradesh", image: tour6, price: 5000, services: ["Mountaing", "Trek", "Campning"], day: 8 },
+    { id: 7, title: "Himachal Pradesh", image: tour6, price: 6000, services: ["Mountaing", "Trek", "Campning"], day: 18 },
+    { id: 8, title: "Himachal Pradesh", image: tour6, price: 9000, services: ["Mountaing", "Trek", "Campning"], day: 8 }]
+  }, 
+
+]
+
+export const DomesticDeals = [
+  {
+    data:[{ id: 0, title: "Himachal Pradesh", image: tour7, price: 5000, services: ["Mountaing", "Trek", "Campning"], day: 8 },
+    { id: 1, title: "Himachal Pradesh", image: tour7, price: 6000, services: ["Mountaing", "Trek", "Campning"], day: 18 },
+    { id: 2, title: "Himachal Pradesh", image: tour7, price: 9000, services: ["Mountaing", "Trek", "Campning"], day: 8 }]
+  },
+  
+  {
+    data:[{ id: 3, title: "Himachal Pradesh", image: tour8, price: 5000, services: ["Mountaing", "Trek", "Campning"], day: 8 },
+    { id: 4, title: "Himachal Pradesh", image: tour8, price: 6000, services: ["Mountaing", "Trek", "Campning"], day: 18 },
+    { id: 5, title: "Himachal Pradesh", image: tour8, price: 9000, services: ["Mountaing", "Trek", "Campning"], day: 8 }]
+  },
+  
+  {
+    data:[{ id: 6, title: "Himachal Pradesh", image: tour9, price: 5000, services: ["Mountaing", "Trek", "Campning"], day: 8 },
+    { id: 7, title: "Himachal Pradesh", image: tour9, price: 6000, services: ["Mountaing", "Trek", "Campning"], day: 18 },
+    { id: 8, title: "Himachal Pradesh", image: tour9, price: 9000, services: ["Mountaing", "Trek", "Campning"], day: 8 }]
+  }, 
+]
+
+export const holidays =[
+  {
+    data:[{ id: 0, title: "Himachal Pradesh", image: tour10, price: 5000, services: ["Mountaing", "Trek", "Campning"], day: 8 },
+    { id: 1, title: "Himachal Pradesh", image: tour10, price: 6000, services: ["Mountaing", "Trek", "Campning"], day: 18 },
+    { id: 2, title: "Himachal Pradesh", image: tour10, price: 9000, services: ["Mountaing", "Trek", "Campning"], day: 8 }]
+  },
+  
+  {
+    data:[{ id: 3, title: "Himachal Pradesh", image: tour2, price: 5000, services: ["Mountaing", "Trek", "Campning"], day: 8 },
+    { id: 4, title: "Himachal Pradesh", image: tour2, price: 6000, services: ["Mountaing", "Trek", "Campning"], day: 18 },
+    { id: 5, title: "Himachal Pradesh", image: tour2, price: 9000, services: ["Mountaing", "Trek", "Campning"], day: 8 }]
+  },
+  
+  {
+    data:[{ id: 6, title: "Himachal Pradesh", image: tour3, price: 5000, services: ["Mountaing", "Trek", "Campning"], day: 8 },
+    { id: 7, title: "Himachal Pradesh", image: tour3, price: 6000, services: ["Mountaing", "Trek", "Campning"], day: 18 },
+    { id: 8, title: "Himachal Pradesh", image: tour3, price: 9000, services: ["Mountaing", "Trek", "Campning"], day: 8 }]
+  }, 
+]
 
 
 

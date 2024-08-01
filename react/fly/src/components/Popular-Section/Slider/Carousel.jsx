@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 // import { Sliderdata } from "../../../assets/Sliderdata"
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
+// import "slick-carousel/slick/slick.css"
+// import "slick-carousel/slick/slick-theme.css"
 import Slider from "react-slick";
 import { AiOutlineArrowRight, AiOutlineArrowLeft } from "react-icons/ai";
 import {  useState } from "react";
