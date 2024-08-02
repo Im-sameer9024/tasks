@@ -128,7 +128,11 @@ export const holidays =[
 ]
 
 
-
+export const similarTours = [
+  { id: 0, title: "Himachal Pradesh", image: tour1, price: 5000, services: ["Mountaing", "Trek", "Campning"], day: 8 },
+{ id: 1, title: "Himachal Pradesh", image: tour2, price: 6000, services: ["Mountaing", "Trek", "Campning"], day: 18 },
+{ id: 2, title: "Himachal Pradesh", image: tour3, price: 9000, services: ["Mountaing", "Trek", "Campning"], day: 8 },
+]
 
 
 export const toursData = [
