@@ -22,6 +22,7 @@ import shadowUrl from "leaflet/dist/images/marker-shadow.png";
 import { useState } from "react";
 import { similarTours } from '../../../assets/data'
 import Card from "../../Best-Tours/Card.jsx"
+import Footer from "./Footer.jsx";
 
 export default function Grandgoa() {
 
@@ -676,6 +677,12 @@ export default function Grandgoa() {
           }
         </div>
 
+      </div>
+
+      {/* Footer  */}
+
+      <div>
+        <Footer/>
       </div>
 
     </div>
