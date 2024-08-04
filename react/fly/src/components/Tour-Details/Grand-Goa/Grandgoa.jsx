@@ -205,13 +205,13 @@ export default function Grandgoa() {
 
           {/* Map section  */}
 
-          <div className=" xl:w-full xl:flex  xl:gap-4 flex md:flex md:flex-row md:justify-between md:w-10/12 md:mx-auto flex-col gap-4 my-[2rem]">
+          <div className=" xl:w-full xl:flex  xl:gap-4 flex md:flex md:flex-row md:justify-between md:w-10/12 md:mx-auto flex-col gap-4 my-[2rem] justify-center w-full mx-auto">
             <div>
               <h1 className=" font-bold">Maps</h1>
             </div>
 
             {/* Map  */}
-            <div className=" w-[30rem] h-[18rem] ">
+            <div className="  h-[18rem] w-full  ">
 
               <MapContainer center={position} zoom={13} className="h-full w-[100%]">
                 <TileLayer
@@ -233,10 +233,10 @@ export default function Grandgoa() {
 
           <div className=" mt-[2rem]">
             <h1 className=" font-heading font-bold ">4 Reviews</h1>
-            <hr  />
+            <hr />
 
             {/* Ratings  */}
-            <div className=" xl:grid-cols-2 xl:m-0 xl:mt-6 xl-w-full grid md:w-10/12 mx-auto  grid-flow-cols grid-cols-1 gap-[2rem] mt-[2rem] ">
+            <div className=" grid grid-cols-1 mt-[2rem] gap-4 md:grid-cols-2  ">
 
               {/* Grid -1  */}
 
@@ -327,75 +327,75 @@ export default function Grandgoa() {
                   Shorts fixie consequat flexitarian four loko tempor duis single-origin coffee. Banksy, elit small batch
                   freegan sed.</p>
               </div>
-              <div className=" grid  grid-flow-cols grid-cols-1 gap-[2rem] mt-[2rem] ">
+              <div className=" grid grid-cols-1 mt-[2rem] gap-4 md:grid-cols-2  ">
 
-                {/* Grid -1  */}
+              {/* Grid -1  */}
 
-                <div className=" flex items-baseline justify-between">
-                  <p className=" font-bold font-text">Accomodation</p>
-                  <div className="flex">
-                    {
-                      stars.map((_, index) => (
-                        <FaStar
-                          key={index}
-                          size={15}
-                          values={rating}
-                          onChange={(e) => setRating(e.target.value)}
-                          color={(hoverValue || rating) > index ? colors.blue : colors.grey}
-                          onMouseOver={() => handlerMouseOverStar(index + 1)}
-                          onMouseLeave={() => handleMouseLeaveStar()}
-                          onClick={() => handleClickStar(index + 1)}
+              <div className=" flex items-baseline justify-between">
+                <p className=" font-bold font-text">Accomodation</p>
+                <div className="flex">
+                  {
+                    stars.map((_, index) => (
+                      <FaStar
+                        key={index}
+                        size={15}
+                        values={rating}
+                        onChange={(e) => setRating(e.target.value)}
+                        color={(hoverValue || rating) > index ? colors.blue : colors.grey}
+                        onMouseOver={() => handlerMouseOverStar(index + 1)}
+                        onMouseLeave={() => handleMouseLeaveStar()}
+                        onClick={() => handleClickStar(index + 1)}
 
-                        />
-                      ))
-                    }
-                  </div>
-                </div>
-
-                {/* Grid-2  */}
-                <div className="  flex items-baseline justify-between">
-                  <p className=" font-bold font-text">Services</p>
-                  <div className="flex">
-                    {
-                      stars.map((_, index) => (
-                        <FaStar
-                          key={index}
-                          size={15}
-                          values={rating}
-                          onChange={(e) => setRating(e.target.value)}
-                          color={(hoverValue || rating) > index ? colors.blue : colors.grey}
-                          onMouseOver={() => handlerMouseOverStar(index + 1)}
-                          onMouseLeave={() => handleMouseLeaveStar()}
-                          onClick={() => handleClickStar(index + 1)}
-
-                        />
-                      ))
-                    }
-                  </div>
-                </div>
-
-                {/* Grid-3  */}
-                <div className=" flex items-baseline justify-between">
-                  <p className=" font-bold font-text">Meals</p>
-                  <div className="flex">
-                    {
-                      stars.map((_, index) => (
-                        <FaStar
-                          key={index}
-                          size={15}
-                          values={rating}
-                          onChange={(e) => setRating(e.target.value)}
-                          color={(hoverValue || rating) > index ? colors.blue : colors.grey}
-                          onMouseOver={() => handlerMouseOverStar(index + 1)}
-                          onMouseLeave={() => handleMouseLeaveStar()}
-                          onClick={() => handleClickStar(index + 1)}
-
-                        />
-                      ))
-                    }
-                  </div>
+                      />
+                    ))
+                  }
                 </div>
               </div>
+
+              {/* Grid-2  */}
+              <div className="  flex items-baseline justify-between">
+                <p className=" font-bold font-text">Services</p>
+                <div className="flex">
+                  {
+                    stars.map((_, index) => (
+                      <FaStar
+                        key={index}
+                        size={15}
+                        values={rating}
+                        onChange={(e) => setRating(e.target.value)}
+                        color={(hoverValue || rating) > index ? colors.blue : colors.grey}
+                        onMouseOver={() => handlerMouseOverStar(index + 1)}
+                        onMouseLeave={() => handleMouseLeaveStar()}
+                        onClick={() => handleClickStar(index + 1)}
+
+                      />
+                    ))
+                  }
+                </div>
+              </div>
+
+              {/* Grid-3  */}
+              <div className=" flex items-baseline justify-between">
+                <p className=" font-bold font-text">Meals</p>
+                <div className="flex">
+                  {
+                    stars.map((_, index) => (
+                      <FaStar
+                        key={index}
+                        size={15}
+                        values={rating}
+                        onChange={(e) => setRating(e.target.value)}
+                        color={(hoverValue || rating) > index ? colors.blue : colors.grey}
+                        onMouseOver={() => handlerMouseOverStar(index + 1)}
+                        onMouseLeave={() => handleMouseLeaveStar()}
+                        onClick={() => handleClickStar(index + 1)}
+
+                      />
+                    ))
+                  }
+                </div>
+              </div>
+            </div>
             </div>
 
           </div>
@@ -420,75 +420,75 @@ export default function Grandgoa() {
                   Shorts fixie consequat flexitarian four loko tempor duis single-origin coffee. Banksy, elit small batch
                   freegan sed.</p>
               </div>
-              <div className=" grid  grid-flow-cols grid-cols-1 gap-[2rem] mt-[2rem] ">
+              <div className=" grid grid-cols-1 mt-[2rem] gap-4 md:grid-cols-2  ">
 
-                {/* Grid -1  */}
+              {/* Grid -1  */}
 
-                <div className=" flex items-baseline justify-between">
-                  <p className=" font-bold font-text">Accomodation</p>
-                  <div className="flex">
-                    {
-                      stars.map((_, index) => (
-                        <FaStar
-                          key={index}
-                          size={15}
-                          values={rating}
-                          onChange={(e) => setRating(e.target.value)}
-                          color={(hoverValue || rating) > index ? colors.blue : colors.grey}
-                          onMouseOver={() => handlerMouseOverStar(index + 1)}
-                          onMouseLeave={() => handleMouseLeaveStar()}
-                          onClick={() => handleClickStar(index + 1)}
+              <div className=" flex items-baseline justify-between">
+                <p className=" font-bold font-text">Accomodation</p>
+                <div className="flex">
+                  {
+                    stars.map((_, index) => (
+                      <FaStar
+                        key={index}
+                        size={15}
+                        values={rating}
+                        onChange={(e) => setRating(e.target.value)}
+                        color={(hoverValue || rating) > index ? colors.blue : colors.grey}
+                        onMouseOver={() => handlerMouseOverStar(index + 1)}
+                        onMouseLeave={() => handleMouseLeaveStar()}
+                        onClick={() => handleClickStar(index + 1)}
 
-                        />
-                      ))
-                    }
-                  </div>
-                </div>
-
-                {/* Grid-2  */}
-                <div className="  flex items-baseline justify-between">
-                  <p className=" font-bold font-text">Services</p>
-                  <div className="flex">
-                    {
-                      stars.map((_, index) => (
-                        <FaStar
-                          key={index}
-                          size={15}
-                          values={rating}
-                          onChange={(e) => setRating(e.target.value)}
-                          color={(hoverValue || rating) > index ? colors.blue : colors.grey}
-                          onMouseOver={() => handlerMouseOverStar(index + 1)}
-                          onMouseLeave={() => handleMouseLeaveStar()}
-                          onClick={() => handleClickStar(index + 1)}
-
-                        />
-                      ))
-                    }
-                  </div>
-                </div>
-
-                {/* Grid-3  */}
-                <div className=" flex items-baseline justify-between">
-                  <p className=" font-bold font-text">Meals</p>
-                  <div className="flex">
-                    {
-                      stars.map((_, index) => (
-                        <FaStar
-                          key={index}
-                          size={15}
-                          values={rating}
-                          onChange={(e) => setRating(e.target.value)}
-                          color={(hoverValue || rating) > index ? colors.blue : colors.grey}
-                          onMouseOver={() => handlerMouseOverStar(index + 1)}
-                          onMouseLeave={() => handleMouseLeaveStar()}
-                          onClick={() => handleClickStar(index + 1)}
-
-                        />
-                      ))
-                    }
-                  </div>
+                      />
+                    ))
+                  }
                 </div>
               </div>
+
+              {/* Grid-2  */}
+              <div className="  flex items-baseline justify-between">
+                <p className=" font-bold font-text">Services</p>
+                <div className="flex">
+                  {
+                    stars.map((_, index) => (
+                      <FaStar
+                        key={index}
+                        size={15}
+                        values={rating}
+                        onChange={(e) => setRating(e.target.value)}
+                        color={(hoverValue || rating) > index ? colors.blue : colors.grey}
+                        onMouseOver={() => handlerMouseOverStar(index + 1)}
+                        onMouseLeave={() => handleMouseLeaveStar()}
+                        onClick={() => handleClickStar(index + 1)}
+
+                      />
+                    ))
+                  }
+                </div>
+              </div>
+
+              {/* Grid-3  */}
+              <div className=" flex items-baseline justify-between">
+                <p className=" font-bold font-text">Meals</p>
+                <div className="flex">
+                  {
+                    stars.map((_, index) => (
+                      <FaStar
+                        key={index}
+                        size={15}
+                        values={rating}
+                        onChange={(e) => setRating(e.target.value)}
+                        color={(hoverValue || rating) > index ? colors.blue : colors.grey}
+                        onMouseOver={() => handlerMouseOverStar(index + 1)}
+                        onMouseLeave={() => handleMouseLeaveStar()}
+                        onClick={() => handleClickStar(index + 1)}
+
+                      />
+                    ))
+                  }
+                </div>
+              </div>
+            </div>
             </div>
 
           </div>
@@ -504,7 +504,7 @@ export default function Grandgoa() {
           </div>
 
 
-          
+
           {/* Ratings  */}
           <div className=" grid mx-auto w-full md:w-10/12  grid-flow-cols grid-cols-1 gap-[2rem] mt-[2rem] ">
 
@@ -577,7 +577,7 @@ export default function Grandgoa() {
           </div>
 
           <div className=" flex">
-          <button className=" bg-[#00247D] text-white font-heading  px-[1.5rem] my-[2rem] py-2 mx-auto">Post Comment</button>
+            <button className=" bg-[#00247D] text-white font-heading  px-[1.5rem] my-[2rem] py-2 mx-auto">Post Comment</button>
           </div>
         </div>
 
@@ -652,10 +652,10 @@ export default function Grandgoa() {
       </div>
 
       {/* Similar Tours  */}
-      <div className=" hidden w-10/12 mx-auto">
+      <div className=" flex flex-col  w-10/12 mx-auto ">
         <h1 className=" font-bold font-heading my-[1rem]">Similar Tours</h1>
         <hr className=" border-dashed border-slate-300" />
-        <div className=" flex justify-between items-center my-[2rem] flex-wrap gap-4">
+        <div className=" flex  my-[2rem]  flex-wrap gap-[2rem]">
           {
             similarTours.map((tour) => (
               <Card key={tour.id} day={tour.day} title={tour.title} image={tour.image} services={tour.services} price={tour.price} />
@@ -666,10 +666,10 @@ export default function Grandgoa() {
       </div>
 
       {/* for Mobile screen  */}
-      <div className="w-10/12 mx-auto">
+      {/* <div className="w-10/12 mx-auto flex items-center  flex-col">
         <h1 className=" font-bold text-center text-[1.5rem] font-heading my-[1rem]">Similar Tours</h1>
         <hr className=" border-dashed border-slate-300" />
-        <div className=" flex justify-between items-center my-[2rem] flex-wrap gap-4">
+        <div className=" flex w-full mx-auto my-[2rem] gap-4">
           {
             similarTours.map((tour) => (
               <Card key={tour.id} day={tour.day} title={tour.title} image={tour.image} services={tour.services} price={tour.price} />
@@ -677,12 +677,12 @@ export default function Grandgoa() {
           }
         </div>
 
-      </div>
+      </div> */}
 
       {/* Footer  */}
 
       <div>
-        <Footer/>
+        <Footer />
       </div>
 
     </div>

@@ -9,7 +9,7 @@ export default function Card({ title, image, price, services, day }) {
 
 
   return (
-    <div className=" shadow-md  rounded-t-3xl shadow-slate-400 flex flex-col h-[20rem]">
+    <div className="  shadow-md  rounded-t-3xl shadow-slate-400 flex flex-col h-[20rem]">
       <div className="relative">
         <img src={image} alt="" className="w-full h-[200px] rounded-t-xl" />
         <p className=" flex items-center bg-[#00247D] text-white px-4  absolute bottom-5"><span><PiCurrencyInrBold /></span>{price}</p>
