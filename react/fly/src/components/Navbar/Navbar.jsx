@@ -8,7 +8,7 @@ export default function Navbar() {
 
   const [showNav, setShowNav] = useState(false)
 
-
+ 
   return (
     <div className=' w-[100vw] h-[100vh]'>
       <div className=' text-[0.9rem] flex items-center justify-between w-10/12 mx-auto font-text pt-[30px] bg-transparent'>
