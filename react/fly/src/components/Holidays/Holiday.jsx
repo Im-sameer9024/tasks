@@ -2,12 +2,63 @@ import { useState } from "react";
 // import { MdPlayArrow } from "react-icons/md";
 import { MdOutlineArrowRight } from "react-icons/md";
 import { MdOutlineArrowDropDown } from "react-icons/md";
+import slide from '../../assets/day1.jpeg'
+import { FaStar } from "react-icons/fa";
+import { MdLocationPin } from "react-icons/md"
 
 
 export default function Holiday() {
 
   const [isOpen, setIsOpen] = useState(false);
 
+
+  // Pagenation of tours 
+
+  const totalItem =[
+    {id:1,title:"Goa Escape",stayTime:"3 Nights & 4 Days",destination:"Goa (3N)"},
+    {id:2,title:"Hellow Gin",stayTime:"2 Nights & 4 Days",destination:"Goa (3N)"},
+    {id:3,title:"Scout Escape",stayTime:"1 Nights & 4 Days",destination:"Goa (3N)"},
+    {id:4,title:"Beach Hills",stayTime:"5 Nights & 4 Days",destination:"Goa (3N)"},
+    {id:5,title:"Rosado",stayTime:"7 Nights & 4 Days",destination:"Goa (3N)"},
+    {id:6,title:"Hello Escape",stayTime:"3 Nights & 4 Days",destination:"Goa (3N)"},
+    {id:7,title:"hyderabad",stayTime:"2 Nights & 4 Days",destination:"Goa (3N)"},
+    {id:8,title:"Goa Escape",stayTime:"8 Nights & 4 Days",destination:"Goa (3N)"},
+    {id:9,title:"Mumbai Escape",stayTime:"6 Nights & 4 Days",destination:"Goa (3N)"},
+    {id:10,title:"Goa Escape",stayTime:"9 Nights & 4 Days",destination:"Goa (3N)"},
+    {id:11,title:"Hyd jaipur",stayTime:"3 Nights & 4 Days",destination:"Goa (3N)"},
+    {id:12,title:"Goa Escape",stayTime:"2 Nights & 4 Days",destination:"Goa (3N)"},
+    {id:13,title:"Pink Perls",stayTime:"3 Nights & 4 Days",destination:"Goa (3N)"},
+    {id:14,title:"Goa sfkjhsiu",stayTime:"3 Nights & 4 Days",destination:"Goa (3N)"},
+    {id:15,title:"Goa Escape",stayTime:"3 Nights & 4 Days",destination:"Goa (3N)"},
+    {id:16,title:"Gsflksjna",stayTime:"3 Nights & 4 Days",destination:"Goa (3N)"},
+    {id:17,title:"sjfkhsikjf",stayTime:"3 Nights & 4 Days",destination:"Goa (3N)"},
+    {id:18,title:"Deeporion",stayTime:"3 Nights & 4 Days",destination:"Goa (3N)"},
+    {id:19,title:"cafe down",stayTime:"3 Nights & 4 Days",destination:"Goa (3N)"},
+    {id:20,title:"hills",stayTime:"3 Nights & 4 Days",destination:"Goa (3N)"},
+  ]
+
+  const[currentPage,setCurrentPage] = useState(1)
+  // const[pageColor,setPageColor] = useState(false)
+
+  // const totalItem = [totalItem.length]
+  const perPageItem = 5
+
+  function itemsPerPage(){
+    const startingIndex = (currentPage-1) * perPageItem;
+    const endingIndex = startingIndex + perPageItem;
+    return totalItem.slice(startingIndex,endingIndex)
+  }
+
+  function pageButtons(){
+    let totalPages = []
+    let pageNumbers = Math.ceil(totalItem.length/perPageItem)
+
+    for(let i=1;i<=pageNumbers;i++){
+      totalPages.push(i)
+    }
+    return totalPages
+
+  }
 
 
 
@@ -36,9 +87,9 @@ export default function Holiday() {
     <div className=" w-[100vw] h-auto">
 
       <div className="w-10/12 mx-auto flex justify-between my-[3rem]">
-        <h2 className=" font-heading">3 To 5 Days Goa Tour Packages Under INR 70,000 (23 Results)</h2>
+        <h2 className=" font-heading font-bold">3 To 5 Days Goa Tour Packages Under INR 70,000 (23 Results)</h2>
         {/* dropdown list */}
-        <div className=" w-56">
+        <div className=" w-56 hidden">
           <div className=" w-full p-4 flex justify-center items-center  ">
             <button
               onClick={toggleDropdown}
@@ -95,7 +146,7 @@ export default function Holiday() {
       <div className=" w-11/12 mx-auto flex my-[3rem] justify-between">
 
         {/* Left Side section  */}
-        <div className="bg-white border border-slate-400 px-3 py-3 w-3/12 rounded-lg shadow-lg mx-auto">
+        <div className="bg-white lg:w-3/12 lg:block hidden border border-slate-400 px-3 py-3 w-3/12 rounded-lg shadow-lg mx-auto h-[450px]">
           {/* Search Input */}
           <div className="mb-4">
             <div className="relative">
@@ -169,71 +220,82 @@ export default function Holiday() {
         </div>
 
         {/* Right Side section  */}
-        <div className="w-8/12">
-          <div className="  flex bg-white border border-slate-400 gap-6  py-3 rounded-lg shadow-lg">
+        <div className="  w-full lg:w-8/12 mx-auto flex flex-col gap-6">
+        {
+          itemsPerPage().map((item,index) => (
+            <div key={index} className="w-full ">
+          <div className="  flex px-3 bg-white flex-col border border-slate-400 gap-6 md:flex md:flex-row py-3 rounded-lg shadow-lg">
 
             {/* left side slide  */}
-            <div className="w-5/12 bg-red-300">
-
+            <div className="w-11/12 h-11/12">
+              <img src={slide} alt="" className=" w-full h-full lg:w-11/12" />
             </div>
             {/* right side text  */}
             <div className="w-full flex justify-between">
-              
-                <div className=" w-7/12">
-                  <h2 className="text-2xl font-bold">Goa Escape</h2>
+
+              <div className=" w-full">
+                <div className=" flex gap-8 items-baseline">
+                  <h2 className="text-2xl font-bold lg:text-[1.3rem]">{item.title}</h2>
                   <div className="flex items-center text-gray-600">
-                    <span className="text-blue-500 font-semibold text-sm mr-2">4.5</span>
-                    <span className="text-sm">(25)</span>
+                    <p className="text-blue-900 flex items-center gap-1 font-semibold text-sm mr-2"> <span><FaStar/></span> 4.5 (25)</p>
                   </div>
-                  <div className="text-gray-600 mb-2">3 Nights & 4 Days</div>
-                  <div className="text-gray-600 mb-4">Goa (3N)</div>
-
-                  <div className="flex mb-4">
-                    <span className="bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">Beach</span>
-                    <span className="bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">Resort</span>
-                    <span className="bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">Monsoon Special</span>
-                  </div>
-                  <div className="text-gray-600 mb-4">Customized Holidays</div>
-
-                  <div className="flex flex-wrap mb-4 text-sm text-gray-600">
-                    <div className="mr-4 flex items-center">
-                      <i className="fas fa-hotel mr-2"></i> Hotel
-                    </div>
-                    <div className="mr-4 flex items-center">
-                      <i className="fas fa-utensils mr-2"></i> Meals
-                    </div>
-                    <div className="mr-4 flex items-center">
-                      <i className="fas fa-binoculars mr-2"></i> Sightseeing
-                    </div>
-                    <div className="flex items-center">
-                      <i className="fas fa-car mr-2"></i> Transfer
-                    </div>
-                  </div>
-
-                  <div className="flex mb-4 text-sm text-gray-600">
-                    <div className="mr-4 flex items-center">
-                      <i className="fas fa-plane mr-2"></i> Flights (optional)
-                    </div>
-                    <div className="flex items-center">
-                      <i className="fas fa-passport mr-2"></i> Visa Assistance
-                    </div>
-                  </div>
-
                 </div>
-                <div className=" w-4/12 text-right pr-4">
-                  <h1>Starting Price Per Adult</h1>
-                  <p className="text-gray-600 text-sm line-through">₹11,000</p>
-                  <h2 className="text-[#00247D] font-bold text-lg">₹10,000</h2>
-                  <button className="bg-[#00247D] text-white font-bold py-2 px-4 rounded">
-                    View Details
-                  </button>
+                <div className="text-gray-600 mb-2">3 Nights & 4 Days</div>
+                <div className="text-gray-600 mb-4 flex items-center gap-1"><MdLocationPin/> Goa (3N)</div>
 
+                <div className="flex mb-4">
+                  <span className=" border-gray-700 border  rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 lg:px-1 lg:py-1 xl:px-3 xl:py-1 ">Beach</span>
+                  <span className="border-gray-700 border rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 lg:px-1 lg:py-1 xl:px-3 xl:py-1">Resort</span>
+                  <span className="border-gray-700 border rounded-full px-3 py-1 text-sm font-semibold text-gray-700 lg:px-1 lg:py-1 xl:px-3 xl:py-1">Monsoon Special</span>
                 </div>
-             
+                <div className="text-gray-600 mb-4">Customized Holidays</div>
 
+                <div className="flex flex-wrap gap-3 text-sm text-gray-600">
+                  <div className="mr-4 flex items-center">
+                    <i className="fas fa-hotel mr-2"></i> Hotel
+                  </div>
+                  <div className="mr-4 flex items-center">
+                    <i className="fas fa-utensils mr-2"></i> Meals
+                  </div>
+                  <div className="mr-4 flex items-center">
+                    <i className="fas fa-binoculars mr-2"></i> Sightseeing
+                  </div>
+                  <div className="flex items-center">
+                    <i className="fas fa-car mr-2"></i> Transfer
+                  </div>
+                  <div className="mr-4 flex items-center">
+                    <i className="fas fa-plane mr-2"></i> Flights (optional)
+                  </div>
+                  <div className="flex items-center">
+                    <i className="fas fa-passport mr-2"></i> Visa Assistance
+                  </div>
+                </div>
+
+                
+
+              </div>
+
+              {/* Price section  */}
+              <div className=" gap-3 w-6/12 text-right pr-4 lg:block hidden">
+                <h1 className=" lg:text-[0.7rem]">Starting Price Per Adult</h1>
+                <p className="text-gray-600 text-sm line-through">₹11,000</p>
+                <h2 className="text-[#00247D] font-bold text-lg">₹10,000</h2>
+                <button className="bg-[#00247D] my-2 text-white font-bold py-2 px-4 rounded text-[0.7rem]">
+                  View Details
+                </button>
+              </div>
             </div>
-
           </div>
+        </div>
+          ))
+        }
+        <div className=" mx-auto flex">
+          {
+            pageButtons().map((page) =>(
+              <button className={`${currentPage === page ? "bg-[#00247D] text-white":"null"} border px-2 border-black`} key={page} onClick={() => setCurrentPage(page)}>{page}</button>
+            ))
+          }
+        </div>
         </div>
       </div>
 
