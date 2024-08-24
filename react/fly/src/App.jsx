@@ -1,4 +1,5 @@
-import Holiday from "./components/Holidays/Holiday";
+import Flights from "./components/FlightDetails/Flights";
+
 
 
 
@@ -9,7 +10,8 @@ export default function App() {
    {/* <Slide */}
    {/* <Grandgoa/> */}
 {/* <Navbar/> */}
-<Holiday/>
+{/* <Holiday/> */}
+<Flights/>
    </div>
   )
 }
