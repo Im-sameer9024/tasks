@@ -14,8 +14,8 @@ export default function App() {
 {/* <Navbar/> */}
 {/* <Holiday/> */}
 {/* <Flights/> */}
-{/* <Hoteldetails/> */}
-<Cruise/>
+<Hoteldetails/>
+{/* <Cruise/> */}
    </div>
   )
 }

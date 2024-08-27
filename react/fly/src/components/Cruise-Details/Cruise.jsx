@@ -4,15 +4,15 @@ import gridImg from "../../assets/grid.png"
 export default function Cruise() {
   return (
     <div className=" w-[100vw] h-[100vh]">
-      <div className="w-7/12 mx-auto p-4 bg-white shadow-lg rounded-lg">
+      <div className="md:w-7/12 w-full mx-auto p-4 bg-white shadow-lg rounded-lg">
         {/* Header */}
-        <div className="bg-[#00247D] text-white p-3 rounded-t-lg text-lg font-semibold flex justify-between">
+        <div className="bg-[#00247D] text-white p-3 rounded-t-lg  font-semibold flex justify-between">
           <span>5 DAY | NAME OF CRUISES | DETAILS(DATE)</span>
         </div>
 
         {/* Image and Details */}
-        <div className="flex pt-4">
-          <div className="w-1/3 relative">
+        <div className="flex flex-col md:flex-row gap-4 pt-4">
+          <div className="md:w-1/3 w-full relative">
             <img
               src={gridImg}
               alt="Cruise Map"
@@ -20,7 +20,7 @@ export default function Cruise() {
             />
             <div className=" absolute bottom-0 bg-black rounded-b-lg bg-opacity-60 w-full text-center mt-2 py-3 text-white">5 DAY CRUISE_NAME</div>
           </div>
-          <div className="w-2/3 pl-4  flex  justify-between">
+          <div className="md:w-2/3 w-full pl-4  flex  justify-between">
             {/* left section  */}
             <div className=" space-y-3">
               <div className="flex items-center">
@@ -51,7 +51,7 @@ export default function Cruise() {
 
         {/* Pricing Table */}
         <div className=" bg-[#eae9e9] rounded-md">
-          <table className="w-full text-center text-[0.9rem]">
+          <table className="w-full text-center text-[0.6rem] md:text-[0.9rem]">
             <thead className=" border-b border-black">
               <tr >
                 <th className="p-2">DATE</th>
@@ -74,8 +74,8 @@ export default function Cruise() {
         </div>
 
         {/* Additional Info */}
-        <div className=" bg-[#D9D9D9] my-6 py-3 space-y-2 px-4 rounded-md flex justify-between">
-          <div className=" grid grid-cols-2 gap-x-8 gap-y-3">
+        <div className=" bg-[#D9D9D9] my-6 py-3 space-y-4 px-4 rounded-md flex justify-between flex-col md:flex-row">
+          <div className=" grid grid-cols-1  gap-x-8 gap-y-3">
             <div className="flex items-center">
               <i className="fas fa-ban mr-2"></i>
               <span>Non Refundable Deposit</span>
@@ -94,7 +94,7 @@ export default function Cruise() {
          <button className="bg-[#00247D] inline-block text-white px-[4rem]  rounded-lg py-1">
             Enquire
           </button>
-          <p className=" text-[0.8rem] text-center">Includes taxes and fees</p>
+          <p className=" text-[0.8rem] md:text-center">Includes taxes and fees</p>
          </div>
         </div>
 
