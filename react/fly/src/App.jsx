@@ -1,4 +1,6 @@
-import Flights from "./components/FlightDetails/Flights";
+// import Flights from "./components/FlightDetails/Flights";
+import Cruise from "./components/Cruise-Details/Cruise";
+import Hoteldetails from "./components/HotelDetails/Hoteldetails";
 
 
 
@@ -11,7 +13,9 @@ export default function App() {
    {/* <Grandgoa/> */}
 {/* <Navbar/> */}
 {/* <Holiday/> */}
-<Flights/>
+{/* <Flights/> */}
+{/* <Hoteldetails/> */}
+<Cruise/>
    </div>
   )
 }
